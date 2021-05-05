@@ -85,11 +85,13 @@ tr {
 h1 {
   color: #696b7b;
   font-weight: bold;
+  font-size: 230%;
 }
 h2 {
   padding-top: 1rem;
   color: #79686a;
   font-weight: bold;
+  font-size: 200%;
 }
 h3 {
   padding-top: 1rem;
@@ -133,7 +135,7 @@ ul.tabs li.current {
 /* 슬라이더 1 시작 */
 .slider-1 {
     height:590px;
-    margin: 0 400px;
+    margin: 50px 400px;
     position:relative;
 }
 

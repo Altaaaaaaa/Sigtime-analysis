@@ -178,14 +178,14 @@ function drawPlot(name, svg) {
     svg
       .append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x)).style("font-size", 13);
 
     // Add Y axis
     var y = d3
       .scaleLinear()
       .domain([minValue - 1, maxValue + 1])
       .range([height, 0]);
-    svg.append("g").call(d3.axisLeft(y));
+    svg.append("g").call(d3.axisLeft(y)).style("font-size", 12);
 
     // Add the lines
     var line = d3
