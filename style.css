@@ -1,0 +1,126 @@
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html {
+box-sizing: border-box;
+font-size: 1rem;
+background-color: #f9f9fd;
+font-family:Nanum Gothic;
+}
+
+body {
+margin: 0;
+height: 100vh;
+}
+
+.table0, .table1, .table2, .table3, .table4, .table5 {
+padding: 2rem 0;
+padding-top: 0;
+margin-bottom: 3rem;
+width:100%; 
+height:200px; 
+overflow:auto;
+}
+
+table {
+width: 5rem;
+margin: 0 auto;
+text-align: center;
+border-collapse: separate;
+border-spacing: 0;
+/* border-collapse: collapse; */
+/* border: 1px solid #d4d4d4; */
+border: 0px;
+}
+
+/* tr:nth-child(even) {
+background: #d4d4d4;
+} */
+
+td {
+width: 5rem;
+padding: 3px 3px;
+border-bottom : 1px solid #444444;
+}
+
+th {
+padding: 0 10px;
+/* border-bottom: 1px solid #d4d4d4; */
+}
+
+thead {
+position: sticky;
+top: 0px;
+background-color: #e4eff7;
+padding: 0 10px;
+} 
+
+.fixed1 th {
+position: sticky;
+top: 0px;
+background-color: #e4eff7;
+padding: 0 10px;
+border : 1px solid #7e8b93;
+border-bottom: 0;
+/*border-left: 1px solid #999999;*/
+}    
+
+.fixed2 th {
+position: sticky;
+top: 19px;
+background-color: #e4eff7;
+padding: 0 10px;
+border : 1px solid #7e8b93;
+}   
+
+tr {
+border-spacing: 0px;
+background-color: white;
+}
+
+h1 {
+color: #696b7b;
+font-weight: bold;
+}
+h2 {
+padding-top: 1rem;
+color: #79686a;
+font-weight: bold;
+}
+h3 {
+padding-top: 1rem;
+}
+
+.container{
+width: 100%;
+margin: 0 auto;
+}
+
+
+
+ul.tabs{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+ul.tabs li{
+background: none;
+color: #222;
+display: inline-block;
+padding: 10px 15px;
+cursor: pointer;
+}
+
+ul.tabs li.current{
+background: #ebedfa;
+color: #222;
+}
+
+.tab-content{
+display: none;
+background: #ebedfa;
+padding: 15px;
+}
+
+.tab-content.current{
+display: inherit;
+}
