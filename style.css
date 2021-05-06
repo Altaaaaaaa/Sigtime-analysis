@@ -135,7 +135,8 @@ ul.tabs li.current {
 /* 슬라이더 1 시작 */
 .slider-1 {
     height:590px;
-    margin: 50px 400px;
+    width: 1125px;
+    margin: auto; /*50px 400px;*/
     position:relative;
 }
 
