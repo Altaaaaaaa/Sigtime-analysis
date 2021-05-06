@@ -1,31 +1,31 @@
 let count = 0;
 $.ajax({
-  url: "NewMat_Fm_Sig0.csv",
+  url: "NewMat_S1_Sig0.csv",
   dataType: "text",
 }).done(successFunction);
 
 $.ajax({
-  url: "NewMat_Fm_Sig1.csv",
+  url: "NewMat_S1_Sig1.csv",
   dataType: "text",
 }).done(successFunction);
 
 $.ajax({
-  url: "NewMat_Fm_Sig2.csv",
+  url: "NewMat_S1_Sig2.csv",
   dataType: "text",
 }).done(successFunction);
 
 $.ajax({
-  url: "NewMat_FS_Sig0.csv",
+  url: "NewMat_S2_Sig0.csv",
   dataType: "text",
 }).done(successFunction);
 
 $.ajax({
-  url: "NewMat_FS_Sig1.csv",
+  url: "NewMat_S2_Sig1.csv",
   dataType: "text",
 }).done(successFunction);
 
 $.ajax({
-  url: "NewMat_FS_Sig2.csv",
+  url: "NewMat_S2_Sig2.csv",
   dataType: "text",
 }).done(successFunction);
 
@@ -125,12 +125,12 @@ var svg_2 = d3
   .append("g")
   .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-drawPlot("NewMat_Fm_Sig0_data.csv", svg0);
-drawPlot("NewMat_Fm_Sig1_data.csv", svg1);
-drawPlot("NewMat_Fm_Sig2_data.csv", svg2);
-drawPlot("NewMat_FS_Sig0_data.csv", svg_0);
-drawPlot("NewMat_FS_Sig1_data.csv", svg_1);
-drawPlot("NewMat_FS_Sig2_data.csv", svg_2);
+drawPlot("NewMat_S1_Sig0_data.csv", svg0);
+drawPlot("NewMat_S1_Sig1_data.csv", svg1);
+drawPlot("NewMat_S1_Sig2_data.csv", svg2);
+drawPlot("NewMat_S2_Sig0_data.csv", svg_0);
+drawPlot("NewMat_S2_Sig1_data.csv", svg_1);
+drawPlot("NewMat_S2_Sig2_data.csv", svg_2);
 
 function drawPlot(name, svg) {
   d3.csv(name, function (data) {
@@ -170,7 +170,7 @@ function drawPlot(name, svg) {
     // Add X axis --> it is a date format
     var x = d3
       .scaleBand()
-      .domain(["p25", "p35", "p45", "p55", "p65"])
+      .domain(["T1", "T2", "T3", "T4", "T5"])
       .range([0, width]);
     // d3.scaleLinear()
     //   .domain(["p25", "p35", "p45", "p55", "p65"])
