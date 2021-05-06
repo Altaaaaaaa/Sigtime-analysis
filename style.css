@@ -254,3 +254,10 @@ ul.tabs li.current {
     float: left;
     padding-left: 20px;
 }
+
+.timeseries-ex {
+    width: 60%;
+    margin: 20px auto;
+    font-size: 120%;
+    font-weight: 100;
+}
