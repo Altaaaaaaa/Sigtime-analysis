@@ -11,17 +11,25 @@
       <h1>SigTime output analysis result</h1>
 
       <h2>mutational process</h2>
+      <p>
+        이거는 
+      </p>
+      <div class="n-ex">
+        <img src="5.png">
+        <p>
+          여기다가 왼쪽의 그래프에 기반해서 왜 n=3하는게 좋은지 이유쓰기
+        </p>
+      </div>
+      <h3>Sigprofiler output(n=3)</h3>
       <div class="slider-1">
         <div class="slides">
-            <div class="active" style="background-image:url(4.png);">Figure4</div>
-            <div style="background-image:url(1.png);">Figure1</div>
-            <div style="background-image:url(2.png);">Figure2</div>
-            <div style="background-image:url(3.png);">Figure3</div>
-            <div style="background-image:url(5.png);">Figure5</div>
-          </div>
+            <div class="active" style="background-image:url(4.png); height: 520px;"></div>
+            <div style="background-image:url(1.png); height: 520px;"></div>
+            <div style="background-image:url(2.png); height: 520px;"></div>
+            <div style="background-image:url(3.png); height: 520px;"></div>
+        </div>
         <div class="page-btns">
             <div class="active"></div>
-            <div></div>
             <div></div>
             <div></div>
             <div></div>
@@ -34,9 +42,26 @@
                 <span><i class="fas fa-angle-right"></i></span>
             </div>
         </div>
+        <div class="figure-ex">
+          <div class="active">Figure 1 explanation<br>Figure 1 explanation</div>
+          <div>Figure 2 explanation</div>
+          <div>Figure 3 explanation</div>
+          <div>Figure 4 explanation</div>
+        </div>
+        
     </div>
       <br><br><hr width="1500px"><br>
       <h2>timeseries analysis</h2>
+      <p>
+        이거는 Sample1의 최종 파일&nbsp;&nbsp;=>&nbsp;&nbsp;
+        <a href="NewMat_S1.csv">원본 파일 링크</a>
+        <br>
+        이거는 Sample2의 최종 파일&nbsp;&nbsp;=>&nbsp;&nbsp;
+        <a href="NewMat_S2.csv">원본 파일 링크</a>
+        <br><br>
+        위의 파일을 correlation <= -0.9, p-value <= 0.05 인 것들만 추렸습니다~~
+      </p>
+      <br>
       <div class="container">
 
         <ul class="tabs">
@@ -51,32 +76,74 @@
         <div id="tab-1" class="tab-content current">
           <h3>Sample1 SIGNATURE 0</h3>
           <div class="table0"></div>
+          <p>
+            Sample1의 signature 0일때
+          </p>
+          <br>
           <div id="my_dataviz0"></div>
+          <p>
+            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+          </p>
         </div>
         <div id="tab-2" class="tab-content">
           <h3>Sample1 SIGNATURE 1</h3>
           <div class="table1"></div>
+          <p>
+            Sample1의 signature 1일때
+          </p>
+          <br>
           <div id="my_dataviz1"></div>
+          <p>
+            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+          </p>
         </div>
         <div id="tab-3" class="tab-content">
           <h3>Sample1 SIGNATURE 2</h3>
           <div class="table2"></div>
-          <div id="my_dataviz2"></div>  
+          <p>
+            Sample1의 signature 2일때
+          </p>
+          <br>
+          <div id="my_dataviz2"></div>
+          <p>
+            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+          </p>  
         </div>
         <div id="tab-4" class="tab-content">
           <h3>Sample2 SIGNATURE 0</h3>
           <div class="table3"></div>
+          <p>
+            Sample2의 signature 0일때
+          </p>
+          <br>
           <div id="my_dataviz_0"></div>
+          <p>
+            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+          </p>
         </div>
         <div id="tab-5" class="tab-content">
           <h3>Sample2 SIGNATURE 1</h3>
           <div class="table4"></div>
+          <p>
+            Sample2의 signature 1일때
+          </p>
+          <br>
           <div id="my_dataviz_1"></div>
+          <p>
+            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+          </p>
         </div>
         <div id="tab-6" class="tab-content">
           <h3>Sample2 SIGNATURE 2</h3>
           <div class="table5"></div>
-          <div id="my_dataviz_2"></div>  
+          <p>
+            Sample2의 signature 2일때
+          </p>
+          <br>
+          <div id="my_dataviz_2"></div>
+          <p>
+            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+          </p>  
         </div>
       </div>
     </div>
