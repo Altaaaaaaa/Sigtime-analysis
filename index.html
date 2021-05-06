@@ -12,15 +12,26 @@
 
       <h2>mutational process</h2>
       <p>
-        이거는 
+        This represents the result of Sigprofiler.<br>
       </p>
       <div class="n-ex">
+        <br>
         <img src="5.png">
-        <p>
-          여기다가 왼쪽의 그래프에 기반해서 왜 n=3하는게 좋은지 이유쓰기
+        <p style="text-align: left;">
+          <br>
+          Identifying the number, <b>N</b>, of mutational processes operative in a set of cancer genomes is required
+          prior to deciphering their signatures. For every N, we evaluate the similarity between the extracted 
+          processes (i.e., <b>process reproducibility</b>) from stochastically initialized iterations.
+          <br>For every N, we approach assesses the average Frobenius reconstruction error of the averaged 
+          deciphered signatures P and their strengths E. Low reconstruction error is indicative of an accurate 
+          description of the original cancer genome catalogs. We select the value of N for <b>which the extracted 
+          processes are reproducible and the reconstruction error is low.</b>
+          <br>In that set, the reconstruction error is the lowest when N is 3,
+          <br>so <b>the value of N was selected as 3.<b>
+          <br>
         </p>
       </div>
-      <h3>Sigprofiler output(n=3)</h3>
+      <h3>Sigprofiler output(N=3)</h3>
       <div class="slider-1">
         <div class="slides">
             <div class="active" style="background-image:url(4.png); height: 520px;"></div>
@@ -43,23 +54,23 @@
             </div>
         </div>
         <div class="figure-ex">
-          <div class="active">Figure 1 explanation<br>Figure 1 explanation</div>
-          <div>Figure 2 explanation</div>
-          <div>Figure 3 explanation</div>
-          <div>Figure 4 explanation</div>
+          <div class="active"><div style="font-weight: bolder;">Figure 1</div>mutations in genomes for samples</div>
+          <div><div style="font-weight: bolder;">Figure 2. Signature 1 of 3</div>Three mutational signatures deciphered from the base substitutions identified in samples.</div>
+          <div><div style="font-weight: bolder;">Figure 3. Signature 2 of 3</div>Three mutational signatures deciphered from the base substitutions identified in samples.</div>
+          <div><div style="font-weight: bolder;">Figure 4. Signature 3 of 3</div>Three mutational signatures deciphered from the base substitutions identified in samples.</div>
         </div>
         
     </div>
       <br><br><hr width="1500px"><br>
       <h2>timeseries analysis</h2>
       <p>
-        이거는 Sample1의 최종 파일&nbsp;&nbsp;=>&nbsp;&nbsp;
-        <a href="NewMat_S1.csv">원본 파일 링크</a>
+        timeseries analysis of SAMPLE1&nbsp;&nbsp;=>&nbsp;&nbsp;
+        <a href="NewMat_S1.csv">file1</a>
         <br>
-        이거는 Sample2의 최종 파일&nbsp;&nbsp;=>&nbsp;&nbsp;
-        <a href="NewMat_S2.csv">원본 파일 링크</a>
+        timeseries analysis of SAMPLE2&nbsp;&nbsp;=>&nbsp;&nbsp;
+        <a href="NewMat_S2.csv">file2</a>
         <br><br>
-        위의 파일을 correlation <= -0.9, p-value <= 0.05 인 것들만 추렸습니다~~
+        From the timeseries analysis of the samples, only the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b> were selected.
       </p>
       <br>
       <div class="container">
@@ -77,72 +88,72 @@
           <h3>Sample1 SIGNATURE 0</h3>
           <div class="table0"></div>
           <p>
-            Sample1의 signature 0일때
+            In Signature0 of Sample1, the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b>
           </p>
           <br>
           <div id="my_dataviz0"></div>
           <p>
-            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+            Compare DESeq and mutation graphs at each TimePoint
           </p>
         </div>
         <div id="tab-2" class="tab-content">
           <h3>Sample1 SIGNATURE 1</h3>
           <div class="table1"></div>
           <p>
-            Sample1의 signature 1일때
+            In Signature1 of Sample1, the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b>
           </p>
           <br>
           <div id="my_dataviz1"></div>
           <p>
-            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+            Compare DESeq and mutation graphs at each TimePoint
           </p>
         </div>
         <div id="tab-3" class="tab-content">
           <h3>Sample1 SIGNATURE 2</h3>
           <div class="table2"></div>
           <p>
-            Sample1의 signature 2일때
+            In Signature2 of Sample1, the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b>
           </p>
           <br>
           <div id="my_dataviz2"></div>
           <p>
-            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+            Compare DESeq and mutation graphs at each TimePoint
           </p>  
         </div>
         <div id="tab-4" class="tab-content">
           <h3>Sample2 SIGNATURE 0</h3>
           <div class="table3"></div>
           <p>
-            Sample2의 signature 0일때
+            In Signature0 of Sample2, the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b>
           </p>
           <br>
           <div id="my_dataviz_0"></div>
           <p>
-            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+            Compare DESeq and mutation graphs at each TimePoint
           </p>
         </div>
         <div id="tab-5" class="tab-content">
           <h3>Sample2 SIGNATURE 1</h3>
           <div class="table4"></div>
           <p>
-            Sample2의 signature 1일때
+            In Signature1 of Sample2, the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b>
           </p>
           <br>
           <div id="my_dataviz_1"></div>
           <p>
-            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+            Compare DESeq and mutation graphs at each TimePoint
           </p>
         </div>
         <div id="tab-6" class="tab-content">
           <h3>Sample2 SIGNATURE 2</h3>
           <div class="table5"></div>
           <p>
-            Sample2의 signature 2일때
+            In Signature2 of Sample2, the values satisfying <b>'correlation <= -0.9, p-value <= 0.05'</b>
           </p>
           <br>
           <div id="my_dataviz_2"></div>
           <p>
-            각 TimePoint에서의 DESeq와 mutation 그래프 비교
+            Compare DESeq and mutation graphs at each TimePoint
           </p>  
         </div>
       </div>

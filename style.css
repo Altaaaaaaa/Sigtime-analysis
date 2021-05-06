@@ -96,14 +96,23 @@ h2 {
 h3 {
   padding-top: 1rem;
   color: #5f6f6e;
+  font-size: 150%;
 }
 h4 {
   padding-top: 1rem;
+}
+p {
+    font-size: 120%;
+    font-weight: 100;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
+}
+
+.container p {
+    font-size: 100%;
 }
 
 ul.tabs {
@@ -190,7 +199,7 @@ ul.tabs li.current {
     position:absolute;
     top:0;
     left:0;
-    width:25%;
+    width:10%;
     height:100%;
     cursor:pointer;
 }
@@ -231,7 +240,7 @@ ul.tabs li.current {
 
 .n-ex {
     width: 80%;
-    height: 450px;
+    height: 420px;
     margin: 20px auto;
 }
 
@@ -243,4 +252,5 @@ ul.tabs li.current {
 .n-ex p {
     width: 40%;
     float: left;
+    padding-left: 20px;
 }
